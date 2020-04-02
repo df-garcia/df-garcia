@@ -1,2 +1,0 @@
-# df-garcia
-Web personal
