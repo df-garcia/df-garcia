@@ -1,8 +1,25 @@
-/*
-  Buena identación y claridad.
-  Por legibilidad hubiera sido mejor añadir comentarios con las secciones de código a las que
-  aplica cada estilo. Pero en general todo muy bien.
-*/
+html,
+body {
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+a {
+  color: white;
+}
+
+a:hover {
+  color: white;
+  text-decoration-line: none;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+footer.real-footer {
+  padding-top: 3rem;
+}
 
 .jumbotron {
   height: 100%;
@@ -24,17 +41,25 @@
   margin-right: auto;
 }
 
+.navbarcontainer {
+  padding: 8px 10px;
+}
+
+.aboutme-icon {
+  padding-bottom: 90px;
+}
+
+.card-img-top {
+  width: 100%;
+  height: 10vw;
+  object-fit: cover;
+}
+
 #banner1 {
   background-image: url("https://images.squarespace-cdn.com/content/v1/57b79a9744024338a66efc5e/1513379621146-AVRD3LRCTBZPDBTGL05T/ke17ZwdGBToddI8pDm48kI8ilMVa_g9Y1CtW8ihjXDYUqsxRUqqbr1mOJYKfIPR7LoDQ9mXPOjoJoqy81S2I8N_N4V1vUb5AoIIIbLZhVYwL8IeDg6_3B-BRuF4nNrNcQkVuAT7tdErd0wQFEGFSnHFIkt9YahOH7alx23KHjz3xAcdJLuMGUx71tDNDeEgoZK8QgUh0BAeUn_raYPGGzA/Because+Geek+Banner+-+Hats.png?format=2500w");
   background-size: cover;
   height: 100%;
   overflow: hidden;
-}
-
-html,
-body {
-  max-width: 100%;
-  overflow-x: hidden;
 }
 
 .fa {
@@ -63,9 +88,13 @@ body {
   background: #333;
 }
 
-.profile {
+.main-text {
   margin-left: 80px;
   margin-right: 80px;
+}
+
+.aboutme {
+  margin-bottom: 50px;
 }
 
 #confusion {
@@ -83,22 +112,9 @@ body {
   color: white;
 }
 
-a {
-  color: white;
-}
-
-a:hover {
-  color: white;
-  text-decoration-line: none;
-}
-
-html {
-  scroll-behavior: smooth;
-}
-
-footer.real-footer {
-  /*
-  Por dar un ejemplo de lo que mencioné al final del otro archivo.
-  */
-  padding-top: 3rem;
+@media only screen and (max-width: 500px) {
+  .main-text {
+    margin-left: 20px;
+    margin-right: 20px;
+  }
 }
